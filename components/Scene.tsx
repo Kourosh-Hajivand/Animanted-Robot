@@ -12,7 +12,7 @@ function Loader() {
 function Scene() {
     return (
         <Canvas gl={{ antialias: true }} dpr={[1, 1.5]} className='relative h-vh'>
-            <OrbitControls enableZoom={false} />
+{/*             <OrbitControls enableZoom={false} /> */}
             <directionalLight position={[-5, -5, 5]} intensity={3} />
             <Suspense fallback={<Loader />}>
                 <ScrollControls damping={0.5} pages={4}>
